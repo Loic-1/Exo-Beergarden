@@ -1,16 +1,22 @@
 /* VARIABLES */
 
-/* @font-face {
-    font-family: 'Oswald';
-    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf) format('woff2');
-} */
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
 
 :root {
   --primary-color: #c59d5f;
   --secondary-color: #131313;
   --primary-font-color: #faf7f2;
   --main-background-color: #faf7f2;
-  /* --oswald-font-family: 'Oswald'; */
+  --oswald-font-family: "Oswald";
+  --raleway-font-family: "Raleway";
 }
 
 /* GENERAL */
@@ -31,6 +37,7 @@ a:hover {
 
 #wrapper {
   background-color: var(--main-background-color);
+  font-family: var(--oswald-font-family);
 }
 
 /* HEADER */
@@ -146,6 +153,9 @@ a:hover {
 
 .section3_subtext {
   line-height: 1.5rem;
+
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
 }
 
 .section3_paragraph {
@@ -155,6 +165,8 @@ a:hover {
   line-height: 1.5rem;
 
   text-align: center;
+
+  font-family: var(--raleway-font-family);
 }
 
 .section3_button {
@@ -169,3 +181,85 @@ a:hover {
 
 /* FOURTH SECTION */
 
+.section4 {
+  display: flex;
+}
+
+.section4_images {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 25%;
+
+  aspect-ratio: 1/1;
+}
+
+.section4_images img {
+  transition: 0.4s ease-in-out;
+}
+
+.section4_images:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.section4_background_image,
+.section4_background_image img {
+  height: 100%;
+}
+
+.section4_foreground_element i {
+  color: var(--primary-font-color);
+  font-size: 5rem;
+}
+
+.section4_foreground_element {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(197, 157, 95, 0.7);
+  opacity: 0;
+}
+
+.section4_foreground_element:hover i {
+  transform: rotate(360deg);
+  transition: 0.7s ease-in-out;
+}
+
+.section4_foreground_element:hover {
+  opacity: 1;
+}
+
+/* FIFTH SECTION */
+
+.section5 {
+    display: flex;
+    justify-content: center;
+
+    padding: 4rem 7rem;
+}
+
+.section5_elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.section5_paragraph {
+    text-align: center;
+}
+
+.section5_image:hover .section5_title{
+    color: var(--primary-color);
+}

@@ -177,6 +177,13 @@ a:hover {
 
   border: none;
   border-radius: 8px;
+
+  transition: 0.4s;
+}
+
+.section3_button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* FOURTH SECTION */
@@ -232,8 +239,8 @@ a:hover {
 }
 
 .section4_foreground_element:hover i {
-  transform: rotate(360deg);
-  transition: 0.7s ease-in-out;
+  transform: rotate(90deg);
+  transition: 0.4s ease-in-out;
 }
 
 .section4_foreground_element:hover {
@@ -243,23 +250,100 @@ a:hover {
 /* FIFTH SECTION */
 
 .section5 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    padding: 4rem 7rem;
+  padding: 4rem 7rem;
 }
 
 .section5_elements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
 .section5_paragraph {
-    text-align: center;
+  text-align: center;
 }
 
-.section5_image:hover .section5_title{
-    color: var(--primary-color);
+.section5_image img {
+  height: 100%;
+}
+
+.section5_image_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: 0.4s;
+}
+
+.section5_image_title:hover {
+  color: var(--primary-color);
+}
+
+/* SECTION 6 */
+
+.section6_image_text {
+  position: relative;
+  background-image: url(/img/h5-parallax-img-2.jpg);
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+
+.section6_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: var(--primary-font-color);
+
+  line-height: 2.5rem;
+}
+
+.section6_title {
+  font-size: xx-large;
+  font-weight: 400;
+}
+
+.section6_subtext {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+/* SIXTH SECTION */
+
+.section7_embed_map_container {
+  background: rgb(19, 19, 19);
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 1) 20%,
+    rgba(19, 19, 19, 0.2497373949579832) 50%,
+    rgba(19, 19, 19, 1) 80%
+  );
+  z-index: 2;
+}
+
+.section7_embed_map {
+  z-index: -1;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--secondary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_logo {
+  padding: 4rem;
 }

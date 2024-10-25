@@ -89,6 +89,10 @@ a:hover {
   height: 100vh;
 }
 
+.section1_background_image {
+  min-height: 100vh;
+}
+
 .section1_foreground_image {
   position: absolute;
 

@@ -336,19 +336,40 @@ a:hover {
 
 /* SEVENTH SECTION */
 
+.section7_filler {
+  height: 5rem;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
 .section7_embed_map_container {
-  background: rgb(19, 19, 19);
+  position: relative;
+
+  width: 100%;
+  height: 600px;
+}
+
+.section7_embed_map_container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section7_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
   background: linear-gradient(180deg,
-      rgba(19, 19, 19, 1) 20%,
-      rgba(19, 19, 19, 0.2497373949579832) 50%,
-      rgba(19, 19, 19, 1) 80%);
-  z-index: 2;
+      rgba(19, 19, 19, 1) 10%,
+      rgba(19, 19, 19, 0) 50%,
+      rgba(19, 19, 19, 1) 90%);
+  pointer-events: none;
 }
-
-.section7_embed_map {
-  z-index: -1;
-}
-
 
 .section7_embed_map_container iframe {
   width: 100%;
@@ -357,7 +378,6 @@ a:hover {
   overflow: hidden;
   margin: 0;
 }
-
 
 /* FOOTER */
 

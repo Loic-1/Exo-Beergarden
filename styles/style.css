@@ -303,7 +303,7 @@ a:hover {
 
 .section6_image_text {
   position: relative;
-  background-image: url(/img/h5-parallax-img-2.jpg);
+  background-image: url(/img/h5-parallax-img-2.webp);
   height: 40vh;
   width: 100%;
   background-size: cover;
@@ -355,6 +355,8 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
+
+  filter: invert(1) grayscale(1);
 }
 
 .section7_overlay {
